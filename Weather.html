@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="Weather.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+
+            <section class="header col-12">
+                <h1>Weather App</h1>
+                <p id="currentDateTime"></p>
+            </section>
+
+            <section class="main col-12">
+
+                <section class="inputs">
+                    <input type="text" placeholder="Enter any city..." id="cityinput">
+                    <input type="submit" value="Submit" id="add">
+                </section>
+
+                <section class="display">
+                    <div class="wrapper">
+                        <i class="fas fa-cloud-sun weather-icon" id="weatherIcon"></i>
+                        <h2 id="cityoutput"></h2>
+                        <p id="description"></p>
+                        <p id="temp"></p>
+                        <p id="wind"></p>
+                    </div>
+                    <div class="loading-spinner" id="loadingSpinner">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </div>
+                    <div class="error-message" id="errorMessage"></div>
+                </section>
+            </section>
+        </div>
+    </div>
+    <script src="Weather.js"></script> 
+</body>
+</html>
